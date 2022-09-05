@@ -1,5 +1,5 @@
-from selenium import webdriver
-from BeautifulSoup import BeautifulSoup
-import pandas as pd
+from bs4 import BeautifulSoup
 
-driver = webdriver.Chrome("/usr/lib/chromium-browser/chromedriver")
+with open('crags.html', 'r') as html_file:
+    content = html_file.read()
+    print(content)
